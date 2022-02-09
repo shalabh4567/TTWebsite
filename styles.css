@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff url("./images/pexels-gradienta-7130478.jpg") center;
+}
+
+hr {
+  border-top-width: 0;
+  height: 3px;
+  background: rgb(124, 120, 120);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(239 68 68);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(187, 39, 39);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  margin-bottom: 0 !important;
+  font-family: "Nunito";
+}
+
+/*************** Navbar *******************/
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  top: 0;
+  background: linear-gradient(to right, #b0fff6, #eef6f6);
+  box-shadow: 0px 8px 6px rgba(92, 88, 88, 0.58);
+  display: flex;
+  align-items: center;
+}
+
+.menu:before {
+  display: none;
+}
+
+.mobile-menu {
+  position: relative;
+  top: 91px;
+  background: linear-gradient(to right, #b0fff6, #eef6f6);
+  box-shadow: 0px 8px 6px rgba(92, 88, 88, 0.58);
+}
+
+/***************** home body starts *****************/
+
+.content-body {
+  margin-top: 50px;
+}
+
+.written-div {
+  width: 100%;
+  height: 20vh;
+  background: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.written-div p {
+  color: #ffffff;
+}
+
+.services {
+  transition: 0.5s ease-in-out;
+}
+
+.flex-grow h2 {
+  transition: 0.5s ease-in-out;
+  font-weight: bold;
+  color: black;
+}
+
+.flex-grow p {
+  transition: 0.5s ease-in-out;
+  font-weight: bold;
+}
+
+.logo-services::before {
+  font-size: 50px;
+}
+
+.services:hover {
+  border-radius: 10px;
+  background: rgb(77, 8, 8);
+}
+
+.flex-grow .flex .hor-line {
+  transition: 0.5s ease-in-out;
+}
+
+.services:hover .flex-grow .flex .hor-line {
+  background: white;
+}
+
+.services:hover .flex-grow h2 {
+  color: white;
+}
+
+.services:hover .flex-grow p {
+  color: white;
+}
+
+/************** Tick Services *****************/
+
+/* .black-bg-image{
+  background:black url("./images/pexels-gradienta-7130478.jpg") no-repeat;
+  background-attachment: fixed;
+} */
+
+.tick-services {
+  transition: 0.5s ease-in-out;
+  background-color: rgb(224 242 254);
+}
+.tick-services svg {
+  transition: 0.5s ease-in-out;
+}
+
+.tick-services span {
+  transition: 0.5s ease-in-out;
+  font-weight: 600;
+}
+
+.tick-services:hover {
+  background: rgb(185 28 28);
+}
+
+.tick-services:hover svg {
+  color: #ffffff;
+}
+
+.tick-services:hover span {
+  color: #ffffff;
+}
+
+/********* footer ********************/
+
+.footer-bg {
+  background-color: rgb(248, 164, 131);
+}
+
+/******************************************** contact block ********************/
+
+.contact-block {
+  position: static;
+  width: 80%;
+  height: 100vh;
+  margin-top: 150px;
+  margin-bottom: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  z-index: -30;
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+
+/************* Media Queries ******************/
+
+@media screen and (max-width: 800px) {
+  .nav-items {
+    display: none;
+  }
+
+  .menu:before {
+    display: block;
+  }
+
+  .con-button-mob{
+    font-size: 5vw !important;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .mobile-menu {
+    display: none;
+  }
+}
